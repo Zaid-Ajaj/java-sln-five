@@ -26,6 +26,7 @@ public class TestCases
         expressions.add(Expr.Add(Expr.Const(-1.0), Expr.Const(10))); // -1.0 + 10
         expressions.add(Expr.Sqrt(Expr.Const(100))); // sqrt(100)
         expressions.add(Expr.Sqrt(Expr.Var("x"))); // sqrt(x) = sqrt(-1.5) = invalid
+        expressions.add(Expr.Sqrt(Expr.Var("y"))); // sqrt(y)
         
         log("a = 3.0");
         log("b = 2.0");
